@@ -1,0 +1,139 @@
+html,
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kiwi Maru', serif;
+    background-color: white;
+}
+
+.banner {
+    padding: 0 20px;
+    background-color: #fafafa;
+}
+
+.title {
+    width: 130px;
+    padding: 10px 10px 12px;
+}
+
+.call {
+    float: right;
+}
+
+.phone {
+    width: 50px;
+    color: #50A8D9;
+    margin: 20px 0;
+}
+
+.number {
+    float: right;
+    margin: 32px 0 30px;
+    padding-left: 10px;
+    font-size: larger;
+    color: #6b6b6b;
+    font-weight: 500;
+    font-family: soleil, sans-serif;
+}
+
+.call:hover .number {
+    color: #50A8D9;
+    text-decoration: none;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.navbar {
+    border-top: solid 1px #b3cddb;
+    border-bottom: solid 1px #b3cddb;
+}
+
+.navbar.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.hidden-nav {
+    display: none;
+}
+.hidden-nav.scrolled {
+    display: contents;
+}
+
+.hero {
+    background-image: url(images/temp-hero-img.jpeg);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.88) 60%, rgba(255, 255, 255, 0.288)), url(images/temp-hero-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 110px;
+    z-index: 1;
+}
+
+.hero-info {
+    padding: 150px 0 0;
+}
+
+.hero h1 {
+    font-family: 'Kiwi Maru', serif;
+    font-weight: 500;
+    color: #50A8D9;
+    margin-bottom: 80px;
+    font-size: 45px;
+}
+
+.hero h3 {
+    font-family: 'Kiwi Maru', serif;
+    color: rgba(78, 78, 78, 0.904);
+    font-size: 20px;
+    padding: 0 120px 70px 0;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.hero-btn {
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 22px;
+    margin-left: 210px;
+    border: 2px solid;
+}
+
+.hero-btn:hover {
+    background-color: #50A8D9;
+    border-color: #50A8D9;
+}
+
+.slider-section {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.582),rgba(255, 255, 255, 0.582)), url(images/sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    z-index: 0;
+}
+
+.slider-div {
+    width: 60%;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+    box-shadow: 0 3px 10px 0px rgba(155, 155, 155, 0.719);
+}
+
+.carousel-img {
+    object-fit: cover;
+}
+
+.carousel-info {
+    background-color: #f3f3f394;
+    height: 150px;
+}
+
+.carousel {
+
+}
