@@ -8,6 +8,10 @@ body {
     background-color: white;
 }
 
+h1 {
+    margin: 0px;
+}
+
 a {
     text-decoration: none;
 }
@@ -167,7 +171,7 @@ nav {
 
 .footer {
     text-align: center;
-    background-color: #fafafa;
+    background-color: #ffffff;
 }
 
 .copyright-text {
@@ -191,7 +195,7 @@ nav {
 }
 
 .services-section {
-    background-color: #fafafa;
+    background-color: #fff9ec;
     padding: 50px 0;
 }
 
@@ -236,11 +240,11 @@ nav {
 
 .service-card h3 {
     font-size: 25px;
-    padding: 5px;
+    padding: 10px 0 5px;
 }
 
 .service-card hr {
-    margin: 15px 20% 10px;
+    margin: 15px 20% 15px;
     border-top: 1px solid white;
 }
 
