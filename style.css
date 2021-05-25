@@ -1,10 +1,15 @@
 html,
 body {
     width: 100%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     font-family: 'Kiwi Maru', serif;
     background-color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 .banner {
@@ -12,9 +17,9 @@ body {
     background-color: #fafafa;
 }
 
-.title {
-    width: 130px;
-    padding: 10px 10px 12px;
+.nav-logo {
+    width: 100px;
+    padding: 10px 10px 5px;
 }
 
 .call {
@@ -24,12 +29,12 @@ body {
 .phone {
     width: 50px;
     color: #50A8D9;
-    margin: 20px 0;
+    margin: 35px 0 0px;
 }
 
 .number {
     float: right;
-    margin: 32px 0 30px;
+    margin: 47px 0 30px;
     padding-left: 10px;
     font-size: larger;
     color: #6b6b6b;
@@ -42,8 +47,21 @@ body {
     text-decoration: none;
 }
 
+nav {
+    width: 100%;
+    z-index: 100;
+}
+
 .nav-item {
     padding: 0 10px;
+}
+
+.nav-link:hover {
+    font-weight: 500 !important;
+}
+
+.nav-link.active {
+    font-weight: 500 !important;
 }
 
 .navbar {
@@ -61,6 +79,7 @@ body {
 .hidden-nav {
     display: none;
 }
+
 .hidden-nav.scrolled {
     display: contents;
 }
@@ -109,15 +128,23 @@ body {
 }
 
 .slider-section {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.582),rgba(255, 255, 255, 0.582)), url(images/sky.jpg);
+    background: linear-gradient(#7ac2e9, #c8eafc);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 50px 0;
+    padding: 50px 0 75px;
     z-index: 0;
+    text-align: center;
+}
+
+.slider-section h1 {
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 400;
 }
 
 .slider-div {
-    width: 60%;
+    width: 75%;
+    z-index: -1;
 }
 
 .carousel-inner {
@@ -130,10 +157,108 @@ body {
 }
 
 .carousel-info {
-    background-color: #f3f3f394;
+    background-color: #ffffffe7;
     height: 150px;
 }
 
-.carousel {
+.carousel-caption {
+    color: black;
+}
 
+.footer {
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.copyright-text {
+    padding: 40px 0;
+    font-family: Lato, sans-serif;
+    color: rgb(97, 97, 97);
+}
+
+/* Services Page */
+
+.services-banner {
+    background-color: #50A8D9;
+    margin-bottom: 0;
+}
+
+.services-banner h1 {
+    padding: 30px 0;
+    color: white;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+.services-section {
+    background-color: #fafafa;
+    padding: 50px 0;
+}
+
+.service-card {
+    height: 550px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(77, 202, 129);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.404);
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.occupational-card {
+    background-color: #50A8D9;
+}
+
+.speech-card {
+    background-color: rgb(218, 104, 138);
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.562);
+}
+
+.service-card:hover .card-btn {
+    color: rgb(77, 202, 129);
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.service-card.occupational-card:hover .card-btn {
+    color: #50A8D9;
+}
+
+.service-card.speech-card:hover .card-btn {
+    color: rgb(218, 104, 138);
+}
+
+.service-card h3 {
+    font-size: 25px;
+    padding: 5px;
+}
+
+.service-card hr {
+    margin: 15px 20% 10px;
+    border-top: 1px solid white;
+}
+
+.service-card-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.service-card-text {
+    padding: 15px;
+}
+
+.card-btn {
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 700;
+    transition: 0.3s;
 }
