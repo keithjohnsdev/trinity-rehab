@@ -14,6 +14,8 @@ h1 {
 
 a {
     text-decoration: none;
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
 .banner {
@@ -57,7 +59,7 @@ nav {
 }
 
 .nav-item {
-    padding: 0 10px;
+    padding: 6px 10px;
 }
 
 .nav-link:hover {
@@ -180,7 +182,7 @@ nav {
     color: rgb(97, 97, 97);
 }
 
-/* Services Page */
+/* ------------------------ Services Page ------------------------ */
 
 .services-banner {
     background-color: #50A8D9;
@@ -196,7 +198,7 @@ nav {
 
 .services-section {
     background-color: #fff9ec;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .service-card {
@@ -208,6 +210,8 @@ nav {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.404);
     transition: 0.3s;
     margin: 10px;
+    position: relative;
+    width: 100%;
 }
 
 .occupational-card {
@@ -226,8 +230,17 @@ nav {
     color: rgb(77, 202, 129);
     background-color: white;
     border: 1px solid white;
+    border-radius: 10px;
     padding: 10px;
-    margin: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .service-card.occupational-card:hover .card-btn {
@@ -262,7 +275,261 @@ nav {
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
-    margin: 10px;
     font-weight: 700;
     transition: 0.3s;
+    position: absolute;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.mascot-img-div {
+    text-align: center;
+    padding: 50px 0 20px;
+}
+
+.mascot-img {
+    width: 70%;
+}
+
+/* ------------------------ Physical Therapy Page ------------------------ */
+
+.pt-banner {
+    background-color: rgb(77, 202, 129);
+}
+
+.learn-more-section {
+    background-color: rgb(221, 248, 232);
+    padding: 70px 0 60px;
+}
+
+.learn-more-section h5 {
+    padding-bottom: 25px;
+    line-height: 130%;
+    font-size: 26px;
+    /* font-family: Lato, sans-serif; */
+}
+
+.learn-more-section ul {
+    margin: 0;
+}
+
+.learn-more-section li {
+    line-height: 140%;
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+}
+
+.grid-photo {
+    width: 65%;
+    margin-left: 17%;
+    margin-top: 8%;
+}
+
+.grid-photo-2 {
+    width: 65%;
+    margin-top: 8%;
+}
+
+.large-screen {
+    text-align: center;
+}
+
+.small-screen {
+    text-align: center;
+}
+
+.white {
+    background-color: #f8f8f8;
+}
+
+.learn-more-section h6 {
+    padding: 20px 0;
+    line-height: 130%;
+    font-size: 20px;
+    /* font-family: Lato, sans-serif; */
+}
+
+.curve {
+    background-image: url(images/curve.png);
+    background-size: cover;
+    height: 100px;
+}
+
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action-text {
+    margin: 50px 0 40px;
+    line-height: 140%;
+}
+
+.bottom-btn {
+    margin: 10px 0 40px;
+    color: black;
+}
+
+.bottom-btn:hover {
+    background-color: rgb(77, 202, 129);
+    border-color: rgb(77, 202, 129);
+}
+
+/* ------------------------ Media Breakpoints ------------------------ */
+
+@media only screen and (min-width: 0px) and (max-width: 575.5px) {
+    
+    .service-card {
+        height: 580px;
+    }
+    
+    .card-wrapper {
+        margin: 0 25px 0 5px;
+    }
+
+    .learn-more-section h5 {
+        text-align: center;
+        font-size: 22px;
+        margin: 0 15px 15px;
+    }
+
+    .learn-more-section h6, h2 {
+        text-align: center;
+    }
+
+    .even-list-lg {
+        display: none;
+    }
+
+    .grid-photo {
+        margin-left: 15%;
+        width: 55%;
+    }
+
+    .large-screen {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.5px) {
+    .service-card {
+        height: 530px;
+    }
+
+    .card-wrapper {
+        margin: 0 25px 0 5px;
+    }
+
+    .service-card-text br {
+        display: none;
+    }
+
+    .even-list-sm {
+        display: none;
+    }
+
+    .grid-photo {
+        margin-left: 14%;
+        width: 60%;
+    }
+
+    .large-screen {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.5px) {
+   
+    .service-card {
+        height: 620px;
+    }
+
+    .service-card-text br {
+        display: none;
+    }
+
+    .card-wrapper {
+        margin: 0px 30px 0 10px;
+    }
+
+    .grid-photo {
+        width: 40%;
+        margin-top: 30px;
+        margin-left: 24%;
+    }
+
+    .even-list-lg {
+        display: none;
+    }
+
+    .large-screen {
+        display: none;
+    }
+
+    .grid-photo-2 {
+        width: 40%;
+        margin-top: 6%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.5px) {
+   
+    .service-card {
+        height: 580px;
+    }
+
+    .card-wrapper {
+        margin: 0px 10px 0 -10px;
+    }
+
+    .mascot-img {
+        width: 50%;
+    }
+
+    .grid-photo {
+        width: 70%;
+        margin-left: 17%;
+        margin-top: 20%;
+    }
+
+    .even-list-sm {
+        display: none;
+    }
+
+    .small-screen {
+        display: none;
+    }
+
+    .grid-photo-2 {
+        width: 70%;
+        margin-top: 14%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .card-wrapper {
+        margin: 0px 10px 0 -10px;
+    }
+
+    .mascot-img {
+        width: 40%;
+    }
+
+    .even-list-sm {
+        display: none;
+    }
+
+    .small-screen {
+        display: none;
+    }
+
+    .curve {
+        background-image: url(images/curve.png);
+        background-size: cover;
+        height: 140px;
+    }
 }
