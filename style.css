@@ -226,23 +226,6 @@ nav {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.562);
 }
 
-.service-card:hover .card-btn {
-    color: rgb(77, 202, 129);
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 10px;
-    font-weight: 700;
-    transition: 0.3s;
-    position: absolute;
-    bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-
 .service-card.occupational-card:hover .card-btn {
     color: #50A8D9;
 }
@@ -270,6 +253,15 @@ nav {
     padding: 15px;
 }
 
+.card-btn-div {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .card-btn {
     color: white;
     border: 1px solid white;
@@ -277,18 +269,28 @@ nav {
     padding: 10px;
     font-weight: 700;
     transition: 0.3s;
-    position: absolute;
+}
+
+.service-card:hover .card-btn {
+    color: rgb(77, 202, 129);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+    /* position: absolute;
     bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: center; */
 }
 
 .mascot-img-div {
     text-align: center;
-    padding: 50px 0 20px;
+    padding: 70px 0 20px;
 }
 
 .mascot-img {
@@ -364,7 +366,7 @@ nav {
 }
 
 .call-to-action-text {
-    margin: 50px 0 40px;
+    margin: 70px 0 40px;
     line-height: 140%;
 }
 
@@ -376,6 +378,40 @@ nav {
 .bottom-btn:hover {
     background-color: rgb(77, 202, 129);
     border-color: rgb(77, 202, 129);
+}
+
+/* ------------------------ Occupational Therapy Page ------------------------ */
+
+.learn-more-section.occupational-therapy {
+    background-color: rgba(221, 235, 248, 1) !important;
+}
+
+.curve.blue {
+    background-image: url(images/blue-curve.png);
+}
+
+.bottom-btn.ot:hover {
+    background-color: #50A8D9;
+    border-color: #50A8D9;
+}
+
+/* ------------------------ Speech Therapy Page ------------------------ */
+
+.st-banner {
+    background-color: #DA688A;
+}
+
+.learn-more-section.speech-therapy {
+    background-color: rgba(248, 221, 221, 1) !important;
+}
+
+.curve.red {
+    background-image: url(images/red-curve.png);
+}
+
+.bottom-btn.st:hover {
+    background-color: #DA688A;
+    border-color: #DA688A;
 }
 
 /* ------------------------ Media Breakpoints ------------------------ */
