@@ -571,6 +571,10 @@ nav {
 
 @media only screen and (min-width: 1200px) {
 
+    .slider-div {
+        width: 50%;
+    }
+
     .card-wrapper {
         margin: 0px 10px 0 -10px;
     }
